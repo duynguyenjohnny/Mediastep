@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="3" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[NoSuchElementException at getTextByXpath :  html/body/div[3]/div[1]/div/div/div[2]/h1</br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'> [TestResult name=TC_1 status=FAILURE method=DemoTestlink.TC_1()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=NoSuchElementException at getTextByXpath :  html/body/div[3]/div[1]/div/div/div[2]/h1</br>] </font></br>]]>
+    </line>
+    <line>
+      <![CDATA[View error : <a href=../screenshots/26_May_2017__03_35_22PM.png_TC_1>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[FAILED]]>
+    </line>
+    <line>
+      <![CDATA[===========================================================================]]>
+    </line>
+    <line>
+      <![CDATA[Click : account-menu</br>]]>
+    </line>
+    <line>
+      <![CDATA[No element exception : account-menu</br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'> [TestResult name=TC_2 status=FAILURE method=DemoTestlink.TC_2()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>] </font></br>]]>
+    </line>
+    <line>
+      <![CDATA[View error : <a href=../screenshots/26_May_2017__03_35_43PM.png_TC_2>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[FAILED]]>
+    </line>
+    <line>
+      <![CDATA[===========================================================================]]>
+    </line>
+    <line>
+      <![CDATA[Click : account-menu</br>]]>
+    </line>
+    <line>
+      <![CDATA[No element exception : account-menu</br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'> [TestResult name=TC_3 status=FAILURE method=DemoTestlink.TC_3()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>] </font></br>]]>
+    </line>
+    <line>
+      <![CDATA[View error : <a href=../screenshots/26_May_2017__03_36_02PM.png_TC_3>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[FAILED]]>
+    </line>
+    <line>
+      <![CDATA[===========================================================================]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="70671" started-at="2017-05-26T08:34:52Z" finished-at="2017-05-26T08:36:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="70671" started-at="2017-05-26T08:34:52Z" finished-at="2017-05-26T08:36:02Z">
+      <class name="com.mediastep.test.DemoTestlink">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="beforeSuite" is-config="true" duration-ms="861" started-at="2017-05-26T15:34:51Z" finished-at="2017-05-26T15:34:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="initializeDriver(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="initializeDriver" is-config="true" duration-ms="18832" started-at="2017-05-26T15:34:52Z" finished-at="2017-05-26T15:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.1.107:9080/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_1() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="FAIL" signature="TC_1()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="TC_1" duration-ms="10216" started-at="2017-05-26T15:35:11Z" finished-at="2017-05-26T15:35:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC1 was failed:  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC1 was failed:  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.mediastep.test.DemoTestlink.TC_1(DemoTestlink.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[NoSuchElementException at getTextByXpath :  html/body/div[3]/div[1]/div/div/div[2]/h1</br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'> [TestResult name=TC_1 status=FAILURE method=DemoTestlink.TC_1()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=NoSuchElementException at getTextByXpath :  html/body/div[3]/div[1]/div/div/div[2]/h1</br>] </font></br>]]>
+            </line>
+            <line>
+              <![CDATA[View error : <a href=../screenshots/26_May_2017__03_35_22PM.png_TC_1>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[FAILED]]>
+            </line>
+            <line>
+              <![CDATA[===========================================================================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_1 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="afterTest" is-config="true" duration-ms="3562" started-at="2017-05-26T15:35:21Z" finished-at="2017-05-26T15:35:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_1 status=FAILURE method=DemoTestlink.TC_1()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=NoSuchElementException at getTextByXpath :  html/body/div[3]/div[1]/div/div/div[2]/h1</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_1() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="initializeDriver(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="initializeDriver" is-config="true" duration-ms="7420" started-at="2017-05-26T15:35:24Z" finished-at="2017-05-26T15:35:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.1.107:9080/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_2() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="FAIL" signature="TC_2()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="TC_2" duration-ms="10091" started-at="2017-05-26T15:35:32Z" finished-at="2017-05-26T15:35:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.mediastep.controller.UserController.clickid(UserController.java:338)
+	at com.mediastep.test.DemoTestlink.TC_2(DemoTestlink.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Click : account-menu</br>]]>
+            </line>
+            <line>
+              <![CDATA[No element exception : account-menu</br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'> [TestResult name=TC_2 status=FAILURE method=DemoTestlink.TC_2()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>] </font></br>]]>
+            </line>
+            <line>
+              <![CDATA[View error : <a href=../screenshots/26_May_2017__03_35_43PM.png_TC_2>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[FAILED]]>
+            </line>
+            <line>
+              <![CDATA[===========================================================================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_2 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="afterTest" is-config="true" duration-ms="1724" started-at="2017-05-26T15:35:42Z" finished-at="2017-05-26T15:35:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_2 status=FAILURE method=DemoTestlink.TC_2()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_2() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="initializeDriver(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="initializeDriver" is-config="true" duration-ms="7115" started-at="2017-05-26T15:35:44Z" finished-at="2017-05-26T15:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.1.107:9080/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_3() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="FAIL" signature="TC_3()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="TC_3" duration-ms="10087" started-at="2017-05-26T15:35:51Z" finished-at="2017-05-26T15:36:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.mediastep.controller.UserController.clickid(UserController.java:338)
+	at com.mediastep.test.DemoTestlink.TC_3(DemoTestlink.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Click : account-menu</br>]]>
+            </line>
+            <line>
+              <![CDATA[No element exception : account-menu</br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'> [TestResult name=TC_3 status=FAILURE method=DemoTestlink.TC_3()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>] </font></br>]]>
+            </line>
+            <line>
+              <![CDATA[View error : <a href=../screenshots/26_May_2017__03_36_02PM.png_TC_3>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[FAILED]]>
+            </line>
+            <line>
+              <![CDATA[===========================================================================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_3 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="afterTest" is-config="true" duration-ms="1586" started-at="2017-05-26T15:36:01Z" finished-at="2017-05-26T15:36:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_3 status=FAILURE method=DemoTestlink.TC_3()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd] output=Click : account-menu</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.mediastep.test.DemoTestlink.TC_3() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.mediastep.test.DemoTestlink@4566e5bd]" name="afterSuite" is-config="true" duration-ms="34" started-at="2017-05-26T15:36:02Z" finished-at="2017-05-26T15:36:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.mediastep.test.DemoTestlink -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

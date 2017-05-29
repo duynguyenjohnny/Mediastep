@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite123]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://192.168.1.107:9080"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://192.168.1.107:9080"/>
+    <classes>
+      <class name="com.mediastep.test.DemoTestlink"/>
+      <class name="com.mediastep.test.apitest.Demoapitest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://192.168.1.107:9080"/>
+    <classes>
+      <class name="com.mediastep.test.apitest.Demoapitest">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.mediastep.test.APOLLO.Demoapitest -->
+      <class name="com.mediastep.test.DemoTestlink">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="initializeDriver"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="TC_2"/>
+          <include name="TC_1"/>
+        </methods>
+      </class> <!-- com.mediastep.test.DemoTestlink -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite123] -->

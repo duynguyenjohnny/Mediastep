@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SN Test Suite" verbose="3"  >
+    <parameter name="config_file" value="SN.properties" />
+    <test name="The SN test suite" >
+        <classes>
+            <class name="test.java.com.mediastep.test.APOLLO.DemoTestlink"/>
+        </classes>
+    </test>
+
+    <!--<parameter name="config_file2" value="SN2.properties" />-->
+    <!--<test name="The SN_sprint_2 test suite" >-->
+        <!--<classes>-->
+            <!--<class name="com.beecow.mobile.SN.Android_Sprint_02"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
+
+
