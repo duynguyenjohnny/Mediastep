@@ -217,7 +217,12 @@ public abstract class BasePage {
 			// exception =iTestResult.getMessage();
 			System.out.println(exception);
 			String TCNAME = iTestResult.getName().toString().toUpperCase();
-			String testcaseid = TCNAME.replace("_", "-");
+			//StringBuilder TCID = new StringBuilder(TCNAME);
+			//Character c = "-";
+			//TCID.setCharAt(10,"-");
+			String testcaseid = userControl.replaceCharAt(TCNAME,9,"-");
+			//String testcaseid = TCNAME.replace("_", "-");
+
 			System.out.println(testcaseid);
 			try {
 				updateTestLinkResult(testcaseid, exception, result);

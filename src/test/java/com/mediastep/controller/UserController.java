@@ -1,10 +1,12 @@
 package test.java.com.mediastep.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -126,6 +128,11 @@ public class UserController extends BaseController {
 		}
 	}
 
+	public static String replaceCharAt(String s, int pos, String c) {
+		return s.substring(0, pos) + c + s.substring(pos + 1);
+	}
+
+
 	@Override
 	public String getTextByXpath(String xpath) {
 		String text = "";
@@ -203,6 +210,44 @@ public class UserController extends BaseController {
 		String saltStr = salt.toString();
 		return saltStr;
 
+	}
+
+//	public String randombirthday() {
+//		Random random = new Random();
+//
+//		GregorianCalendar gc = new GregorianCalendar();
+//
+//		int year = randBetween(1900, 2017);
+//		int month = randBetween(01, 12);
+//		int day = randBetween(01, 31);
+//
+//		gc.set(gc.YEAR, year);
+//
+//		int dayOfYear = randBetween(1, gc.getActualMaximum(gc.DAY_OF_YEAR));
+//
+//		gc.set(gc.DAY_OF_YEAR, dayOfYear);
+//
+//		String DOB = (gc.get(gc.YEAR) + "-" + (gc.get(gc.MONTH) + 2) + "-" + gc.get(gc.DAY_OF_MONTH)+ 2);
+//        return DOB;
+//	}
+//
+	public static int randBetween(int start, int end) {
+		return start + (int)Math.round(Math.random() * (end - start));
+	}
+
+	public String randomDataOfBirth(int yearStartInclusive, int yearEndExclusive) {
+		LocalDate start = LocalDate.ofYearDay(yearStartInclusive, 1);
+		LocalDate end = LocalDate.ofYearDay(yearEndExclusive, 1);
+
+		long longDays = ChronoUnit.DAYS.between(start, end);
+		int days = (int) longDays;
+		if (days != longDays) {
+			throw new IllegalStateException("int overflow; too many years");
+		}
+		int day = randBetween(0, days);
+		LocalDate dateOfBirth = start.plusDays(day);
+
+		return dateOfBirth.toString();
 	}
 
 	public void clicklgin() {

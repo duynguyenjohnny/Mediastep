@@ -5,7 +5,7 @@
     <parameter name="config_file" value="SN.properties" />
     <test name="The SN test suite" >
         <classes>
-            <class name="test.java.com.mediastep.test.APOLLO.DemoTestlink"/>
+            <class name="test.java.com.mediastep.test.APOLLO.Registration"/>
         </classes>
     </test>
 
